@@ -1,16 +1,131 @@
-/* <!-- Evandro  78791 --> /
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<body>
-<h1>Hello, I am Evandro</h1>
-<h2>web / UI designer </h2>
-<p>I created this website to showcase some of my recent web design work.</p>
-<h3>sampleWeb pages</h3>
-<p><a href="exercises/page-1.html">A tale of two Cities</a>.</p>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p><a href="exercises/page-2.html">Purple Rain</a></p>
-</body>
-</html>
-<link rel="stylesheet" href="assets/css/global.css">
+  <title>Evandro | Front-end Developer</title>
+  <meta name="description" content="Evandro is a front-end developer who loves building clean, modern and user-friendly interfaces for the web.">
+
+  <!-- Google Font (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Global styles from the course -->
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/style-1.css">
+
+  <!-- Your custom overrides (dark theme, spacing, etc.) -->
+  <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
+<body class="theme-dark">
+
+  <!-- NAVBAR ---------------------------------------------------- -->
+  <nav class="theme-dark nav-main">
+    <div class="nav-inner container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span class="logo-text">Sample Logo</span>
+      </a>
+
+      <ul class="links-wrapper">
+        <li><a class="current" href="index.html">Home</a></li>
+        <li><a href="portfolio/index.html">Portfolio</a></li>
+        <li><a href="store/index.html">Store</a></li>
+        <li><a href="contact/index.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO ------------------------------------------------------ -->
+  <header class="theme-dark hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-kicker">Welcome</p>
+        <h1>Evandro</h1>
+        <p class="hero-subtitle">
+          I am a front-end developer who loves creating clean, modern and
+          user-friendly interfaces for the web.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="portfolio/index.html">View my work</a>
+          <a class="btn btn-outline" href="contact/index.html">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <!-- hero image – usa o nome do ficheiro que já está na pasta img -->
+        <img src="assets/img/home-hero.jpg" alt="Hero image showing design work">
+      </div>
+    </div>
+  </header>
+
+  <!-- RECENT PROJECTS ------------------------------------------- -->
+  <section class="theme-dark section-projects">
+    <div class="container">
+      <header class="section-heading">
+        <h2>Recent projects</h2>
+        <p>
+          Below you can see some examples of my recent work. Do you need a
+          website? Let’s create something amazing together.
+        </p>
+      </header>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <img src="assets/img/project-fashion (1).jpg" alt="Fashion project website">
+          <div class="project-body">
+            <h3>Snazzy Fashion</h3>
+            <p>
+              A stylish landing page for a modern fashion brand focused on
+              bold imagery and clean typography.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <img src="assets/img/project-smoothie.jpg" alt="Smoothie project website">
+          <div class="project-body">
+            <h3>Smooth Smoothies</h3>
+            <p>
+              A colourful single-page website for a smoothie bar with bright
+              visuals and friendly microcopy.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <img src="assets/img/project-crypto-wallet (1).jpg" alt="Crypto wallet project website">
+          <div class="project-body">
+            <h3>Crypto Wallet</h3>
+            <p>
+              A product page for a crypto wallet app, showing clean cards,
+              charts and clear calls to action.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER ---------------------------------------------------- -->
+  <footer class="theme-dark site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Evandro. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="portfolio/index.html">Portfolio</a>
+        <span>·</span>
+        <a href="privacy.html">Privacy &amp; Legal</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Evandro | Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicons (se tiver esses ficheiros) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+  <link rel="manifest" href="../assets/img/site.webmanifest">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Tentativa de carregar o CSS geral (não atrapalha se não funcionar) -->
+  <link rel="stylesheet" href="../assets/css/custom.css">
+
+  <!-- CSS ESPECIAL DA STORE (GARANTIDO) -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body.store-page {
+      font-family: "Poppins", sans-serif;
+      background: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* NAV SIMPLES */
+    .store-header {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      color: #0056ff;
+    }
+
+    /* TÍTULO DA STORE */
+    .store-title {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-top: 20px;
+    }
+
+    .store-subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    /* CARDS DOS PRODUTOS */
+    .products-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .product-card {
+      background: #f8f8f8;
+      border-radius: 14px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    /* AQUI GARANTIMOS IMAGEM PEQUENA */
+    .product-card img {
+      max-width: 220px;
+      height: auto;
+      margin: 0 auto 14px auto;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .product-card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+      color: #444;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      background: #ff9900;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .buy-btn:hover {
+      background: #cc7a00;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      margin-top: 40px;
+      padding: 22px 0;
+      text-align: center;
+      background: #222;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .store-title {
+        font-size: 2rem;
+      }
+      .store-subtitle {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="store-page">
+
+<header class="store-header">
+  <nav class="navbar container">
+    <a href="../index.html" class="logo">Evandro</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../portfolio/index.html">Portfolio</a></li>
+      <li><a href="../contact/index.html">Contact</a></li>
+      <li><a href="index.html" class="active">Store</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1 class="store-title">Web Design Books</h1>
+  <p class="store-subtitle">Recommended books to learn web design and front-end.</p>
+
+  <section class="products-wrapper">
+
+    <!-- BOOK 1 -->
+    <article class="product-card">
+      <img src="assets/img/beautiful-web-design.png" alt="Beautiful Web Design book">
+      <h2>The Principles of Beautiful Web Design</h2>
+      <p>Learn how to design beautiful and professional websites.</p>
+      <a class="buy-btn" href="https://www.amazon.co.uk/dp/1925836363" target="_blank">
+        Buy now on Amazon
+      </a>
+    </article>
+
+    <!-- BOOK 2 -->
+    <article class="product-card">
+      <img src="assets/img/responsive-web-design-frain.jpg" alt="Responsive Web Design book">
+      <h2>Responsive Web Design with HTML5 &amp; CSS3</h2>
+      <p>Build websites that look great on phones, tablets and desktops.</p>
+      <a class="buy-btn" href="https://www.amazon.co.uk/dp/1849693188" target="_blank">
+        Buy now on Amazon
+      </a>
+    </article>
+
+    <!-- BOOK 3 -->
+    <article class="product-card">
+      <img src="assets/img/complete-website-planning.png" alt="Complete Website Planning book">
+      <h2>Complete Website Planning</h2>
+      <p>Plan your website content and structure before you start to code.</p>
+      <a class="buy-btn" href="https://www.amazon.co.uk/dp/0648053709" target="_blank">
+        Buy now on Amazon
+      </a>
+    </article>
+
+    <!-- BOOK 4 -->
+    <article class="product-card">
+      <img src="assets/img/making-your-website-work.png" alt="Making Your Website Work book">
+      <h2>Making Your Website Work</h2>
+      <p>Make your website easier to use and more effective for visitors.</p>
+      <a class="buy-btn" href="https://www.amazon.co.uk/dp/1706664680" target="_blank">
+        Buy now on Amazon
+      </a>
+    </article>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Evandro — Store Project</p>
+  </div>
+</footer>
+
+</body>
+</html>
