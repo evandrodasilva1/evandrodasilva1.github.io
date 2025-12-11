@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Evandro</title>
+
+  <style>
+    /* Base */
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f7f3ff;
+      color:#222;
+    }
+
+    /* Cabeçalho simples com navegação */
+    header{
+      background:#ffffff;
+      border-bottom:1px solid #e2e2e2;
+      padding:12px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    header .logo{
+      font-weight:bold;
+      font-size:20px;
+      text-decoration:none;
+      color:#333;
+    }
+    nav a{
+      margin-left:16px;
+      text-decoration:none;
+      color:#444;
+      font-size:15px;
+    }
+    nav a:hover{
+      color:#ff6b6b;
+    }
+
+    /* Área principal */
+    main{
+      min-height:calc(100vh - 80px);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 15px;
+    }
+
+    .contact-card{
+      background:#fff;
+      max-width:640px;
+      width:100%;
+      padding:40px 30px 35px;
+      border-radius:14px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      text-align:center;
+    }
+
+    .contact-card h1{
+      font-size:32px;
+      margin-bottom:10px;
+    }
+
+    .contact-card p.intro{
+      font-size:16px;
+      line-height:1.5;
+      margin-bottom:25px;
+    }
+
+    form{
+      text-align:left;
+      margin-top:10px;
+    }
+
+    label{
+      display:block;
+      font-size:14px;
+      margin-bottom:4px;
+      font-weight:bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea{
+      width:100%;
+      padding:10px 12px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      font-size:14px;
+      box-sizing:border-box;
+      margin-bottom:14px;
+      font-family:inherit;
+    }
+
+    textarea{
+      min-height:110px;
+      resize:vertical;
+    }
+
+    .btn-row{
+      text-align:center;
+      margin-top:10px;
+    }
+
+    button{
+      padding:12px 36px;
+      border-radius:999px;
+      border:none;
+      background:#ff6b6b;
+      color:#fff;
+      font-size:16px;
+      font-weight:bold;
+      cursor:pointer;
+      box-shadow:0 6px 14px rgba(255,107,107,0.5);
+    }
+
+    button:hover{
+      background:#ff4b4b;
+    }
+
+    /* Rodapé simples */
+    footer{
+      text-align:center;
+      font-size:13px;
+      color:#777;
+      padding:15px 10px 25px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="../index.html">Evandro</a>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../portfolio/index.html">Portfolio</a>
+    <a href="index.html">Contact</a>
+    <a href="../privacy.html">Privacy</a>
+  </nav>
+</header>
+
+<main>
+  <section class="contact-card">
+    <h1>Get in touch</h1>
+    <p class="intro">
+      If you would like to talk about a project, ask a question or give feedback about my work,
+      you can send me a message with this form. I am still a student, but I am happy to practice
+      with small projects and ideas.
+    </p>
+
+    <form action="#" method="post">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" required>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <div class="btn-row">
+        <button type="submit">Send message</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  © 2025 Evandro – Student portfolio
+</footer>
+
+</body>
+</html>

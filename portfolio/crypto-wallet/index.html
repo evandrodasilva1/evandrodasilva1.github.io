@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Evandro | Portfolio Project | Snazzy Crypto Wallet</title>
+    <meta name="description" content="Send, receive and exchange 100+ cryptocurrencies with ease." />
+
+    <!-- Preload hero image -->
+    <link rel="preload" href="assets/img/crypto-wallet-hero-image.jpg" as="image">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Resize images -->
+    <style>
+        .col-image img {
+            max-width: 480px;   /* tamanho máximo da imagem */
+            width: 100%;        /* ocupa até 100% da coluna */
+            height: auto;       /* mantém proporção */
+            display: block;
+            margin: 0 auto;     /* centraliza */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-inner">
+            <p class="hero-badge">Crypto Wallet Portfolio Project</p>
+            <h1>All your crypto in one simple wallet</h1>
+            <p class="hero-text">
+                Send, receive and exchange 100+ cryptocurrencies with ease.
+            </p>
+            <a href="#features" class="hero-btn">Learn more</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- DECKHEAD / INTRO -->
+        <section class="section deckhead" id="intro">
+            <div class="container">
+                <h2>Manage your coins with confidence</h2>
+                <p>
+                    Snazzy Crypto Wallet lets you store, send and receive coins in seconds.
+                    You can see your balance in real time, track prices and move funds between
+                    wallets with just a few taps.
+                </p>
+            </div>
+        </section>
+
+        <!-- TWO COLUMN 1 - WALLET APP -->
+        <section class="section section-alt" id="features">
+            <div class="container two-col">
+                <div class="col-text">
+                    <h2>Clean dashboard for every coin</h2>
+                    <p>
+                        View your portfolio in one place and follow the history of each asset.
+                        Simple charts help you understand how your balance change over time
+                        without complex trading screens.
+                    </p>
+                </div>
+                <div class="col-image">
+                    <img src="assets/img/wallet.png" alt="Wallet app interface">
+                </div>
+            </div>
+        </section>
+
+        <!-- TWO COLUMN 2 - COPY TRADER -->
+        <section class="section section-light">
+            <div class="container two-col two-col-reverse">
+                <div class="col-image">
+                    <img src="assets/img/copy_trader.png" alt="Copy trader feature">
+                </div>
+                <div class="col-text">
+                    <h2>Copy trader for beginners</h2>
+                    <p>
+                        New to crypto? Follow experienced traders and copy their moves automatic.
+                        Your account mirrors their strategy while you learn how the market works
+                        in a safe and simple way.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TWO COLUMN 3 - VIDEO -->
+        <section class="section section-dark">
+            <div class="container two-col">
+                <div class="col-text">
+                    <h2>See how it works in practice</h2>
+                    <p>
+                        Watch this short video review to understand the main features of a
+                        modern crypto wallet, from security to fees and daily use.
+                    </p>
+                </div>
+                <div class="col-video">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/wI2i5ca1RT4"
+                            title="Crypto.com Review (2021)"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TWO COLUMN 4 - MOVE CRYPTO SAFELY (COM A NOVA IMAGEM) -->
+        <section class="section section-soft">
+            <div class="container two-col">
+                <div class="col-text">
+                    <h2>Move your crypto safely</h2>
+                    <p>
+                        Move your crypto between wallets fast, safe and with low network fees.
+                        A simple interface lets you understand everything without complex
+                        trading screens.
+                    </p>
+                </div>
+                <div class="col-image">
+                    <!-- AQUI USA A IMAGEM NOVA wallet2.jpg -->
+                    <img src="assets/img/wallet2.jpg" alt="Crypto transfer">
+                    <p class="image-caption">Crypto transfer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- THREE ICONS SECTION -->
+        <section class="section section-icons">
+            <div class="container icons-grid">
+                <article class="icon-card">
+                    <div class="icon-circle">₿</div>
+                    <h3>Multi-coin support</h3>
+                    <p>
+                        Store Bitcoin, Ethereum and many other popular coins in one single app.
+                    </p>
+                </article>
+
+                <article class="icon-card">
+                    <div class="icon-circle">🔒</div>
+                    <h3>Secure by design</h3>
+                    <p>
+                        Your private keys stay encrypted and protected with strong authentication.
+                    </p>
+                </article>
+
+                <article class="icon-card">
+                    <div class="icon-circle">📱</div>
+                    <h3>Ready on every device</h3>
+                    <p>
+                        Access your wallet from phone, tablet or desktop with a clean interface.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Evandro – Snazzy Crypto Wallet Portfolio Project.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

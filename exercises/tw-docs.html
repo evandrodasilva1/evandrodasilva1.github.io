@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample documentation layout using Tailwind via CDN</title>
+  <meta name="description" content="Simple documentation style page with sidebar navigation, readable content width and an Edit on GitHub button built with Tailwind utilities.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+  <!-- Page wrapper -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- Top header -->
+    <header class="border-b border-slate-200 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+        <h1 class="text-lg sm:text-xl font-semibold tracking-tight">
+          Tailwind Docs Example
+        </h1>
+        <p class="text-xs text-slate-500">
+          v1.0.0
+        </p>
+      </div>
+    </header>
+
+    <!-- Main area with sidebar and content -->
+    <div class="flex-1">
+
+      <!-- Layout: single column on mobile, sidebar + content on large screens -->
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10 lg:grid lg:grid-cols-[16rem,minmax(0,1fr)] lg:gap-10">
+
+        <!-- Sidebar navigation (left on lg+, stacked on small) -->
+        <aside class="mb-8 lg:mb-0 lg:border-r lg:border-slate-200 lg:pr-6">
+          <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-3">
+            On this page
+          </p>
+          <nav class="space-y-1 text-sm">
+            <a href="#getting-started"
+               class="block rounded-md px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+              Getting started
+            </a>
+            <a href="#layout"
+               class="block rounded-md px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+              Layout and structure
+            </a>
+            <a href="#typography"
+               class="block rounded-md px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+              Typography
+            </a>
+            <a href="#next-steps"
+               class="block rounded-md px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+              Next steps
+            </a>
+          </nav>
+        </aside>
+
+        <!-- Main documentation content -->
+        <main class="max-w-prose">
+
+          <!-- Top title row with Edit on GitHub button -->
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-6">
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">
+              Documentation overview
+            </h2>
+
+            <!-- Edit on GitHub button component -->
+            <a href="#"
+               class="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm hover:border-slate-400 hover:bg-slate-50 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50">
+              Edit on GitHub
+            </a>
+          </div>
+
+          <p class="text-slate-700 text-base leading-relaxed mb-6">
+            This small example shows how you can build a documentation style layout using Tailwind. On large screens there is a sidebar with section links on the left and the main content on the right. On small screens the layout becomes a simple stacked single column.
+          </p>
+
+          <!-- Section: getting started -->
+          <section id="getting-started" class="mb-10">
+            <h3 class="text-xl font-semibold tracking-tight mb-3">
+              Getting started
+            </h3>
+            <p class="text-slate-700 text-base leading-relaxed mb-4">
+              To start using this layout you only need a basic HTML file and the Tailwind CDN script in the head. There is no build step required, so the setup is very quick and friendly for students or small experiments.
+            </p>
+            <p class="text-slate-700 text-base leading-relaxed">
+              You can copy this file into your own project, change the text and add more sections in the sidebar. The navigation links use simple anchor tags, so clicking on a link scrolls to the matching section inside the page.
+            </p>
+          </section>
+
+          <!-- Section: layout -->
+          <section id="layout" class="mb-10">
+            <h3 class="text-xl font-semibold tracking-tight mb-3">
+              Layout and structure
+            </h3>
+            <p class="text-slate-700 text-base leading-relaxed mb-4">
+              The main layout uses a grid on large viewports with two columns. The first column holds the sidebar and the second column holds the content. On smaller screens the grid is not applied, so everything becomes a vertical stack with natural reading order.
+            </p>
+            <p class="text-slate-700 text-base leading-relaxed mb-4">
+              The main content area uses the max w prose utility so the text never becomes too wide. This improves reading comfort because lines of text stay at a good length even on very large screens.
+            </p>
+            <p class="text-slate-700 text-base leading-relaxed">
+              Spacing between blocks comes from margin bottom utilities on the headings and paragraphs. This keeps the CSS simple and makes it easy to adjust the spacing if you want a tighter or more relaxed feeling.
+            </p>
+          </section>
+
+          <!-- Section: typography -->
+          <section id="typography" class="mb-10">
+            <h3 class="text-xl font-semibold tracking-tight mb-3">
+              Typography
+            </h3>
+            <p class="text-slate-700 text-base leading-relaxed mb-4">
+              By default this example uses the system font stack provided by Tailwind, which looks clean on most platforms. You can customize this by adding your own font in the head and then using font utilities on the body or on specific elements.
+            </p>
+            <p class="text-slate-700 text-base leading-relaxed mb-4">
+              Headings have a stronger font weight and tighter tracking to make them stand out from the body text. Paragraphs use a relaxed line height so the eye can move from one line to the next more easily during reading.
+            </p>
+            <p class="text-slate-700 text-base leading-relaxed">
+              You can also use inline code or lists if needed, but the main idea is to keep the text clear and readable, because documentation pages are usually long and contain many details.
+            </p>
+          </section>
+
+          <!-- Section: next steps -->
+          <section id="next-steps" class="mb-4">
+            <h3 class="text-xl font-semibold tracking-tight mb-3">
+              Next steps
+            </h3>
+            <p class="text-slate-700 text-base leading-relaxed mb-4">
+              As a next step you can extend the sidebar with nested links, add active states for the current section, or include a small search input at the top of the page. All of these features can be built with more Tailwind utilities.
+            </p>
+            <p class="text-slate-700 text-base leading-relaxed">
+              When your layout is ready, you can move from the CDN version of Tailwind to a local build pipeline. This will remove unused classes and make your production CSS file very small and fast to load for your visitors.
+            </p>
+          </section>
+
+        </main>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

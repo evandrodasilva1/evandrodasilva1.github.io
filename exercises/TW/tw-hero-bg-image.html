@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TW Header with Background Image and Tinted Overlay</title>
+
+    <!-- TailwindCSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="antialiased">
+
+    <!-- Hero with background image and tinted overlay -->
+    <header class="relative overflow-hidden flex items-center justify-center text-center text-white
+                   min-h-[48vh] sm:min-h-[32vh] md:min-h-[60vh] lg:min-h-[88vh]
+                   px-4 sm:px-6 lg:px-8">
+
+        <!-- Background image layer (z-0) -->
+        <div class="absolute inset-0 z-0">
+            <img
+              src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Abstract technology background"
+              class="w-full h-full object-cover">
+        </div>
+
+        <!-- Tinted overlay layer (z-10) -->
+        <div class="absolute inset-0 bg-black/30 z-10"></div>
+
+        <!-- Text and buttons layer (z-20) -->
+        <div class="relative z-20 max-w-6xl mx-auto px-4 space-y-6">
+
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight drop-shadow-lg">
+                Building the Web of Tomorrow
+            </h1>
+
+            <h2 class="text-lg sm:text-xl md:text-2xl text-slate-100 max-w-3xl mx-auto drop-shadow mb-12">
+                A clean, modern hero block built with Tailwind CSS.
+            </h2>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
+
+                <a href="#"
+                   class="w-full sm:w-auto rounded-2xl bg-indigo-500 px-7 py-3 text-sm sm:text-base font-semibold
+                          text-white shadow-lg hover:bg-indigo-400 transition-transform transition-colors
+                          hover:scale-105">
+                    Get Started
+                </a>
+
+                <a href="#"
+                   class="w-full sm:w-auto rounded-2xl bg-white/10 px-7 py-3 text-sm sm:text-base font-semibold
+                          text-white ring-1 ring-white/40 shadow-md hover:bg-white/20 transition-transform
+                          hover:scale-105">
+                    Learn More
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+</body>
+</html>

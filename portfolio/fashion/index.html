@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Evandro | Portfolio Project | Snazzy Fashions</title>
+  <meta name="description" content="Fashions you will love at prices you can afford. Look great and feel fantastic.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Preload hero poster image -->
+  <link rel="preload" href="assets/img/hero-still.jpg" as="image">
+
+  <!-- Google Font: Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Line Awesome icons (for happy customers section) -->
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+
+  <!-- HERO / HEADER -->
+  <header class="hero">
+    <video class="hero-video"
+           src="assets/videos/hero-video.mp4"
+           poster="assets/img/hero-still.jpg"
+           autoplay
+           muted
+           loop
+           playsinline>
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="hero-kicker">Snazzy Fashion Store</p>
+      <h1>Fashions you will love</h1>
+      <p class="hero-text">
+        New pieces for every season, with classic shapes and modern colours.
+      </p>
+      <a href="#deckhead" class="btn-primary">Discover the collection</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- DECKHEAD / INTRO -->
+    <section id="deckhead" class="section section-dark intro">
+      <div class="container">
+        <h2>Welcome to your new wardrobe</h2>
+        <p>
+          In this page you can see a small fashion collection with four product
+          groups: hats, scarves, tee-shirts and footwear. All items are designed
+          to be mixed together so you can create outfits very fast.
+        </p>
+        <p class="intro-links">
+          Explore:
+          <a href="#hats">Hats</a> ·
+          <a href="#scarves">Scarves</a> ·
+          <a href="#tees">Tee-Shirts</a> ·
+          <a href="#footwear">Footwear</a> ·
+          <a href="#customers">Happy customers</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- HATS -->
+    <section id="hats" class="section section-light">
+      <div class="container two-column">
+        <div class="column text-column">
+          <h2>Hat Collection</h2>
+          <p>
+            Our hats are made with soft wool and clean lines. They give a strong
+            look but still stay very comfortable for long days in the city.
+          </p>
+          <p>
+            You can wear them with coats, dresses or simple jeans and a shirt.
+            One good hat is enough to change a full outfit.
+          </p>
+          <a href="#customers" class="btn-secondary">See what customers say</a>
+        </div>
+
+        <div class="column image-column">
+          <figure>
+            <img src="assets/img/hat.jpg" alt="Black fashion hat">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCARVES -->
+    <section id="scarves" class="section section-grey">
+      <div class="container two-column reverse">
+        <div class="column text-column">
+          <h2>Scarves</h2>
+          <p>
+            Light scarves with soft fabric and simple patterns. You can wrap
+            them around your neck, your hair or even on a handbag.
+          </p>
+          <p>
+            They are perfect for a little bit of colour on neutral outfits and
+            they also help on cooler evenings in spring and autumn.
+          </p>
+          <a href="#hats" class="btn-secondary">Match with hats</a>
+        </div>
+
+        <div class="column image-column">
+          <figure>
+            <img src="assets/img/scarves.jpg" alt="Colourful scarf on table">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEE-SHIRTS -->
+    <section id="tees" class="section section-light">
+      <div class="container two-column">
+        <div class="column text-column">
+          <h2>Tee-Shirts</h2>
+          <p>
+            Our tee shirts are made for daily use with simple shapes and soft
+            cotton. They work good alone in summer or under a jacket in winter.
+          </p>
+          <p>
+            Neutral tones help you mix and match fast in the morning, while
+            small details keep the design interesting and modern.
+          </p>
+          <a href="#footwear" class="btn-secondary">Find shoes to match</a>
+        </div>
+
+        <div class="column image-column">
+          <figure>
+            <img src="assets/img/tee-shirts.jpg" alt="Fashion tee-shirt flat lay">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTWEAR -->
+    <section id="footwear" class="section section-grey">
+      <div class="container two-column reverse">
+        <div class="column text-column">
+          <h2>Footwear</h2>
+          <p>
+            Clean sneakers with simple lines and just a little colour. They are
+            light, comfy and easy to use with dresses, jeans or suits.
+          </p>
+          <p>
+            The rubber sole gives good grip for walking in the city, while the
+            upper part stays elegant enough for a dinner out.
+          </p>
+          <a href="#deckhead" class="btn-secondary">Back to top</a>
+        </div>
+
+        <div class="column image-column">
+          <figure>
+            <img src="assets/img/footwear.jpg" alt="White sneakers on background">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- HAPPY CUSTOMERS -->
+    <section id="customers" class="section section-dark customers">
+      <div class="container">
+        <h2>Happy customers</h2>
+        <div class="customers-grid">
+          <article class="customer-card">
+            <i class="las la-truck"></i>
+            <h3>Fast delivery</h3>
+            <p>Orders usually arrive in three working days or less.</p>
+          </article>
+
+          <article class="customer-card">
+            <i class="las la-euro-sign"></i>
+            <h3>Fair prices</h3>
+            <p>We try to keep quality high and prices friendly.</p>
+          </article>
+
+          <article class="customer-card">
+            <i class="las la-arrows-alt-h"></i>
+            <h3>Easy returns</h3>
+            <p>If something does not fit, you can return in 30 days.</p>
+          </article>
+
+          <article class="customer-card">
+            <i class="las la-comments"></i>
+            <h3>Support</h3>
+            <p>Our team is ready to help you choose sizes and looks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Fashion Project — Evandro</p>
+    </div>
+  </footer>
+
+</body>
+</html>

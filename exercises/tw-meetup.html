@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Meetup 2025 – Dublin community event landing page</title>
+  <meta name="description" content="Join our community tech meetup in Dublin for talks, workshops and networking with developers, designers and students from all levels.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+  <!-- Sticky header navigation -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur shadow-sm">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+
+      <!-- Logo / brand -->
+      <a href="#hero" class="text-lg font-semibold tracking-tight text-slate-900 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white">
+        Dublin Tech Meetup
+      </a>
+
+      <!-- Nav links -->
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#schedule" class="text-slate-700 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white">
+          Schedule
+        </a>
+
+        <a href="#speakers" class="text-slate-700 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white">
+          Speakers
+        </a>
+
+        <a href="#footer" class="text-slate-700 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white">
+          Contact
+        </a>
+      </div>
+
+      <!-- Simple CTA in header on desktop -->
+      <a href="#tickets"
+         class="hidden md:inline-flex items-center rounded-full bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white">
+        Get ticket
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main content with padding top to not hide behind sticky header -->
+  <main class="pt-24">
+
+    <!-- Hero section -->
+    <section id="hero" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
+      <div class="grid gap-10 lg:grid-cols-2 items-center">
+
+        <div>
+          <p class="text-sm font-semibold tracking-wide text-indigo-600 mb-3">
+            Community meetup • 12 October 2025 • Dublin
+          </p>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6">
+            Build, share and learn at Dublin Tech Meetup
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-700 mb-8">
+            An evening of lightning talks, live demos and friendly networking for developers, designers, students and anyone curious about modern tech.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4" id="tickets">
+            <a href="#schedule"
+               class="inline-flex items-center rounded-full bg-indigo-600 px-6 py-3 text-sm sm:text-base font-semibold text-white shadow-lg shadow-indigo-500/30 hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50">
+              View schedule
+            </a>
+
+            <a href="#speakers"
+               class="inline-flex items-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm sm:text-base font-semibold text-slate-800 hover:border-indigo-400 hover:text-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50">
+              Meet the speakers
+            </a>
+          </div>
+
+          <p class="mt-6 text-sm text-slate-500">
+            Free to attend • Limited seats • Snacks and drinks included
+          </p>
+        </div>
+
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-3xl bg-gradient-to-tr from-indigo-500 via-sky-400 to-emerald-400 shadow-xl flex items-center justify-center">
+            <p class="text-white text-xl sm:text-2xl font-semibold text-center px-6">
+              Live talks, hands-on demos and real stories from the Dublin tech community
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Schedule section -->
+    <section id="schedule" class="bg-white border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+
+        <div class="mb-10">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 mb-3">
+            Event schedule
+          </h2>
+          <p class="text-slate-600">
+            Doors open at 18:00. Talks start at 18:30 followed by Q&amp;A and networking.
+          </p>
+        </div>
+
+        <!-- Two-column layout on md+ -->
+        <div class="grid gap-10 md:grid-cols-2">
+
+          <!-- Column 1 -->
+          <div class="space-y-6">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600 mb-1">
+                18:00 – 18:30
+              </p>
+              <h3 class="text-lg font-semibold text-slate-900 mb-1">
+                Arrival, check-in and welcome
+              </h3>
+              <p class="text-sm text-slate-700">
+                Grab a badge, say hi to the community and enjoy some coffee before the talks begin.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600 mb-1">
+                18:30 – 19:00
+              </p>
+              <h3 class="text-lg font-semibold text-slate-900 mb-1">
+                Keynote: Building useful AI tools
+              </h3>
+              <p class="text-sm text-slate-700">
+                A practical look at how small teams use AI APIs and open-source tools in real projects.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600 mb-1">
+                19:00 – 19:20
+              </p>
+              <h3 class="text-lg font-semibold text-slate-900 mb-1">
+                Lightning talks: Community show-and-tell
+              </h3>
+              <p class="text-sm text-slate-700">
+                Short five-minute talks from attendees sharing side projects, tools and tips.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="space-y-6">
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600 mb-1">
+                19:20 – 19:40
+              </p>
+              <h3 class="text-lg font-semibold text-slate-900 mb-1">
+                Break and snacks
+              </h3>
+              <p class="text-sm text-slate-700">
+                Time to stretch, chat with other attendees and meet the speakers in person.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600 mb-1">
+                19:40 – 20:10
+              </p>
+              <h3 class="text-lg font-semibold text-slate-900 mb-1">
+                Panel: Careers in modern web development
+              </h3>
+              <p class="text-sm text-slate-700">
+                Junior and senior devs share honest stories about learning, failing and growing in tech.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600 mb-1">
+                20:10 – 21:00
+              </p>
+              <h3 class="text-lg font-semibold text-slate-900 mb-1">
+                Open networking
+              </h3>
+              <p class="text-sm text-slate-700">
+                Find a project partner, ask questions, or just enjoy the vibe with the local community.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers section -->
+    <section id="speakers" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <div class="mb-10 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 mb-3">
+          Meet the speakers
+        </h2>
+        <p class="max-w-2xl mx-auto text-slate-600">
+          A small group of engineers, designers and community builders sharing what they know and love.
+        </p>
+      </div>
+
+      <!-- Speaker cards grid -->
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Speaker card 1 -->
+        <article class="rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform duration-150">
+          <div class="h-36 bg-gradient-to-tr from-indigo-500 to-sky-400 rounded-t-2xl"></div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-slate-900 mb-1">
+              Alex Murphy
+            </h3>
+            <p class="text-sm text-slate-600 mb-3">
+              Senior software engineer at CloudDock, building tools for real-time data platforms.
+            </p>
+            <p class="text-xs uppercase tracking-wide text-slate-500 mb-3">
+              Talk: Building useful AI tools
+            </p>
+            <a href="#"
+               class="text-sm font-medium text-indigo-600 underline decoration-2 decoration-indigo-500 underline-offset-4 hover:text-indigo-800 hover:no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white">
+              View profile
+            </a>
+          </div>
+        </article>
+
+        <!-- Speaker card 2 -->
+        <article class="rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform duration-150">
+          <div class="h-36 bg-gradient-to-tr from-emerald-500 to-lime-400 rounded-t-2xl"></div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-slate-900 mb-1">
+              Priya Desai
+            </h3>
+            <p class="text-sm text-slate-600 mb-3">
+              UX engineer and designer focused on inclusive interfaces and accessible design systems.
+            </p>
+            <p class="text-xs uppercase tracking-wide text-slate-500 mb-3">
+              Panel: Careers in web development
+            </p>
+            <a href="#"
+               class="text-sm font-medium text-indigo-600 underline decoration-2 decoration-indigo-500 underline-offset-4 hover:text-indigo-800 hover:no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white">
+              View profile
+            </a>
+          </div>
+        </article>
+
+        <!-- Speaker card 3 -->
+        <article class="rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition transform duration-150">
+          <div class="h-36 bg-gradient-to-tr from-rose-500 to-orange-400 rounded-t-2xl"></div>
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-slate-900 mb-1">
+              Daniel O&apos;Brien
+            </h3>
+            <p class="text-sm text-slate-600 mb-3">
+              Front-end developer and community organiser, running local meetups and mentoring juniors.
+            </p>
+            <p class="text-xs uppercase tracking-wide text-slate-500 mb-3">
+              Host and community show-and-tell
+            </p>
+            <a href="#"
+               class="text-sm font-medium text-indigo-600 underline decoration-2 decoration-indigo-500 underline-offset-4 hover:text-indigo-800 hover:no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white">
+              View profile
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-slate-900 text-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm">
+        © 2025 Dublin Tech Meetup. All rights reserved.
+      </p>
+
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#"
+           class="text-slate-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900">
+          Twitter
+        </a>
+        <a href="#"
+           class="text-slate-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900">
+          LinkedIn
+        </a>
+        <a href="#"
+           class="text-slate-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

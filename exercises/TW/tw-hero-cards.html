@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind hero and card grid with dark mode</title>
+  <meta name="description" content="Sample page with a hero section and a responsive card grid using Tailwind CSS, custom config and dark mode.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts for custom Tailwind fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind config in the browser: colors, fonts, spacing -->
+  <script>
+    tailwind = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#4f46e5',       // roxo principal
+            brandDark: '#312e81'    // roxo escuro para dark mode
+          },
+          fontFamily: {
+            heading: ['"Poppins"', 'system-ui', 'sans-serif'],
+            body: ['"Inter"', 'system-ui', 'sans-serif']
+          },
+          spacing: {
+            18: '4.5rem'            // valor extra de espaçamento
+          }
+        }
+      },
+      darkMode: 'class'
+    };
+  </script>
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased font-body dark:bg-slate-950 dark:text-slate-50">
+
+  <!-- Page wrapper -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- Top nav with dark mode toggle -->
+    <header class="border-b border-slate-200/70 bg-white/80 backdrop-blur dark:bg-slate-900/80 dark:border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4">
+        <span class="font-heading text-lg tracking-tight">
+          Tailwind Demo
+        </span>
+
+        <button
+          type="button"
+          class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-1.5 text-sm font-medium text-slate-800 shadow-sm hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
+          onclick="document.documentElement.classList.toggle('dark')">
+          <span class="hidden sm:inline">Toggle dark mode</span>
+          <span class="sm:hidden">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main class="flex-1">
+      <section class="bg-brand text-white dark:bg-brandDark">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-18 flex flex-col gap-8 lg:flex-row lg:items-center">
+          
+          <div class="flex-1 space-y-5">
+            <p class="text-sm font-medium uppercase tracking-[0.18em] text-indigo-200">
+              Learning Tailwind
+            </p>
+
+            <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
+              Build, style and ship modern UIs faster.
+            </h1>
+
+            <p class="text-base sm:text-lg md:text-xl text-indigo-100 max-w-xl">
+              This hero uses custom colors, fonts and spacing defined in the Tailwind config in the browser. 
+              Below you can see a responsive card grid with dark mode support.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <a href="#cards"
+                 class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm sm:text-base font-semibold text-brand shadow-md hover:bg-indigo-50">
+                View the cards
+              </a>
+
+              <a href="#"
+                 class="inline-flex items-center justify-center rounded-full border border-indigo-200/70 px-6 py-3 text-sm sm:text-base font-semibold text-indigo-100 hover:bg-indigo-500/30">
+                Learn more
+              </a>
+            </div>
+          </div>
+
+          <div class="flex-1">
+            <div class="bg-white/10 rounded-3xl border border-indigo-200/30 p-6 sm:p-8">
+              <p class="text-sm font-medium text-indigo-100 mb-3">
+                Custom Tailwind config
+              </p>
+              <ul class="space-y-2 text-sm text-indigo-100/90">
+                <li>• Color brand e brandDark</li>
+                <li>• Fontes heading (Poppins) e body (Inter)</li>
+                <li>• Espaçamento extra: p-18, py-18, mt-18, etc.</li>
+                <li>• Dark mode com toggle (classe .dark no html)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Card grid section -->
+      <section id="cards" class="bg-slate-50 dark:bg-slate-950 py-12 sm:py-16 lg:py-18">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8">
+            Featured learning paths
+          </h2>
+
+          <p class="text-base sm:text-lg text-slate-700 dark:text-slate-300 mb-8 sm:mb-10 max-w-2xl">
+            Each card below is responsive. In small screens they stack in a single column. 
+            In medium screens you see two columns, and in large screens three columns.
+          </p>
+
+          <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+            <!-- Card 1 -->
+            <article class="rounded-2xl border border-slate-200 bg-white/90 p-6 shadow-sm
+                             dark:border-slate-800 dark:bg-slate-900/80">
+              <h3 class="font-heading text-xl mb-2">
+                Tailwind basics
+              </h3>
+              <p class="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                Learn how to add Tailwind via CDN, work with utility classes, and style headings, text and buttons quickly.
+              </p>
+              <p class="text-xs uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+                Level: beginner
+              </p>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="rounded-2xl border border-slate-200 bg-white/90 p-6 shadow-sm
+                             dark:border-slate-800 dark:bg-slate-900/80">
+              <h3 class="font-heading text-xl mb-2">
+                Layout and components
+              </h3>
+              <p class="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                Build hero sections, responsive grids and simple components using flexbox, grid and spacing helpers.
+              </p>
+              <p class="text-xs uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+                Level: intermediate
+              </p>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="rounded-2xl border border-slate-200 bg-white/90 p-6 shadow-sm
+                             dark:border-slate-800 dark:bg-slate-900/80">
+              <h3 class="font-heading text-xl mb-2">
+                Dark mode and theming
+              </h3>
+              <p class="text-sm text-slate-700 dark:text-slate-300 mb-4">
+                Add dark mode, custom colours and fonts, and create themes that match your brand or project style.
+              </p>
+              <p class="text-xs uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+                Level: advanced
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

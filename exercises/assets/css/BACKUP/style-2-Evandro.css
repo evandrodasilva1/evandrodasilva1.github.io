@@ -117,31 +117,3 @@ p {
     color: chocolate;
 }
 
-/* Evandro 78791 – style-2.css */
-
-/* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* TYPOGRAPHY – fundo roxo */
-body {
-    background-color: #7d3c98;
-}
-
-/* Headings */
-h1 {
-    color: white;
-}
-
-h2 {
-    color: white;
-}
-
-/* Parágrafos */
-p {
-    color: white;
-}
-
-/* Links */
-a {
-    color: white;
-}

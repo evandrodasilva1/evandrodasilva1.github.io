@@ -1,0 +1,378 @@
+/* Reset simples */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variáveis básicas */
+:root {
+  --bg-dark: #113328;
+  --bg-grey: #f4f4f4;
+  --text-main: #222;
+  --accent: #0f7f5f;
+  --accent-light: #23a57b;
+  --white: #ffffff;
+  --radius-lg: 18px;
+  --shadow-soft: 0 14px 40px rgba(0, 0, 0, 0.15);
+  --max-width: 1100px;
+}
+
+/* Texto global */
+body {
+  font-family: "Playfair Display", serif;
+  color: var(--text-main);
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+/* Containers */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Botões */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.7rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  margin-top: 1.3rem;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--accent-light);
+}
+
+.btn-secondary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: var(--accent);
+  color: var(--white);
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 70vh;
+  min-height: 420px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.60),
+    rgba(0, 0, 0, 0.55)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.hero-kicker {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  margin-bottom: 0.75rem;
+  opacity: 0.9;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-text {
+  max-width: 480px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* Secções gerais */
+.section {
+  padding: 4rem 0;
+}
+
+.section-light {
+  background: #ffffff;
+}
+
+.section-grey {
+  background: var(--bg-grey);
+}
+
+.section-dark {
+  background: var(--bg-dark);
+  color: var(--white);
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 400; /* pedido do tutorial */
+}
+
+/* Intro / deckhead */
+.intro p {
+  max-width: 720px;
+  margin-bottom: 0.9rem;
+}
+
+.intro-links a {
+  color: var(--accent-light);
+  text-decoration: none;
+}
+
+.intro-links a:hover {
+  text-decoration: underline;
+}
+
+/* Links dentro da secção escura */
+.section-dark a:link,
+.section-dark a:visited {
+  color: var(--accent-light);
+}
+
+.section-dark a:hover,
+.section-dark a:focus,
+.section-dark a:active {
+  color: var(--white);
+}
+
+/* Layout duas colunas */
+.two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.two-column.reverse {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+}
+
+.text-column p + p {
+  margin-top: 0.75rem;
+}
+
+/* Imagens de produto */
+.image-column img {
+  display: block;
+  width: 100%;
+  max-width: 420px;      /* controla o tamanho das imagens */
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  margin: 0 auto;
+}
+
+/* Happy customers */
+.customers h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.customers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.8rem;
+}
+
+.customer-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 18px;
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.customer-card i {
+  font-size: 2.1rem;
+  margin-bottom: 0.9rem;
+  color: var(--accent-light);
+}
+
+.customer-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Rodapé */
+.site-footer {
+  background: #111;
+  color: #ccc;
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+}
+
+.site-footer p {
+  text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .two-column,
+  .two-column.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .two-column.reverse .text-column {
+    order: 2;
+  }
+
+  .two-column.reverse .image-column {
+    order: 1;
+  }
+
+  .customers-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 55vh;
+    min-height: 360px;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .customers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========= IMPROVE LAYOUT (ADDED BY EVANDRO) ========= */
+
+/* limite da largura do conteúdo para não ficar muito esticado */
+main,
+header .hero-inner,
+.section-selector-1,
+.section-selector-2,
+.section-selector-3,
+.section-selector-4 {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* espaço entre as secções */
+section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* títulos um pouco mais leves, fica mais elegante */
+.section-selector-1 h2,
+.section-selector-2 h2,
+.section-selector-3 h2,
+.section-selector-4 h2 {
+  font-weight: 400;
+}
+
+/* texto mais fácil de ler em linhas mais curtas */
+.section-selector-1 p,
+.section-selector-2 p,
+.section-selector-3 p,
+.section-selector-4 p {
+  max-width: 60rem;
+  line-height: 1.6;
+}
+
+/* imagens dos produtos – ficam menores e responsivas */
+.section-selector-2 img,
+.section-selector-3 img,
+.section-selector-4 img,
+img[src*="hat"],
+img[src*="scarves"],
+img[src*="tee-shirts"],
+img[src*="footwear"] {
+  display: block;
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  margin: 1.5rem auto 0 auto; /* centra a imagem */
+}
+
+/* em ecrãs grandes, imagem e texto ficam lado a lado */
+@media (min-width: 800px) {
+  .section-selector-2 .container,
+  .section-selector-3 .container,
+  .section-selector-4 .container {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  /* alterna a posição imagem/texto se quiser */
+  .section-selector-3 .container {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  }
+}
+
+/* vídeo hero ocupa sempre a largura toda mas sem cortar feio */
+.hero video,
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* pequena margem em baixo do hero para separar do deckhead */
+.hero {
+  margin-bottom: 2rem;
+}

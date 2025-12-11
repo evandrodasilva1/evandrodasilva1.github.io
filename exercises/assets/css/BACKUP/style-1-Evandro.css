@@ -31,6 +31,7 @@ img { width: 100%; height: auto }
     --fs-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
     --fs-xxl: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
     --fs-xxxl: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
+
 }
 
 /*  ============== LAYOUT FOR CONTENT CONTAINERS ================= */
@@ -41,15 +42,15 @@ header, section, footer { margin-left: auto; margin-right: auto; overflow: hidde
 section > *:last-child { margin-bottom: 0 !important }
 
 /*  ====================== HEADER ======================== */
-         
+
 /* Padding around content: laptops / desktops  */
 @media (min-width: 768px) {
     header { 
-        padding-top: 1%; 
+        padding-top: 3%;
         padding-right: 20%;
-        padding-bottom: 0%;
-        padding-left: 20%
-    }
+        padding-bottom: 0;
+        padding-left: 20% 
+    } 
 }
                         
 /* Padding around content: mobiles */
@@ -57,31 +58,30 @@ section > *:last-child { margin-bottom: 0 !important }
     header { 
         padding-top: 5%;
         padding-right: 5%;
-        padding-bottom: 0%;
-        padding-left: 5%
+        padding-bottom: 0;
+        padding-left: 5% 
     }
 }
 
-
 /*  ====================== SECTIONS ======================== */
 
-/* Padding around content: laptops / desktops  */
+/* Padding around content: laptops / desktops */
 @media (min-width: 768px) {
     section { 
         padding-top: 4%;
         padding-right: 20%;
         padding-bottom: 4%;
-        padding-left: 20%
+        padding-left: 20%     
     }
 }
                         
 /* Padding around content: mobiles */
 @media (max-width: 767px) {
     section { 
-        padding-left: 5%;
+        padding-top: 5%;
         padding-right: 5%;
         padding-bottom: 5%;
-        padding-left: 5% 
+        padding-left: 5%;
     }
 }
 
@@ -94,54 +94,35 @@ section > * { max-width: 1600px }
 section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 
 /* ============= TYPOGRAPHY ============ */
-body { background-color: #7d3c98; }
+
+body { background-color: red; }
 h1 {
     font-size: var(--fs-xxxl);
-    margin-top: 32px;
     line-height: 1.2;
-    color: red;
+    color: black;
 }
 
 h2 {
     font-size: var(--fs-xl);
     line-height: 1.2;
-    color: blue;
+    color: white;
+    margin-top: 42px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: var(--fs-lg);
     margin-top: 48px; 
-    margin-bottom: 6px;
+    margin-bottom: 4px;
+    color: black;
+    line-height: 1.2;
 }
 
 p {
 	font-size: var(--fs-base);
     line-height: 1.7;
 	margin-bottom: 12px;
-    color: chocolate;
 }
 
-/* Evandro 78791 – style-2.css */
 
-/* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* TYPOGRAPHY – fundo roxo */
-body {
-    background-color: #7d3c98;
-}
-
-/* Headings */
-h1 {
-    color: white;
-}
-
-h2 {
-    color: white;
-}
-
-/* Parágrafos */
-p {
-    color: white;
-}
-
-/* Links */
-a {
-    color: white;
-}
